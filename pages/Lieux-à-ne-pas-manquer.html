@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Romandie pour les débutants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <h1>La Romandie pour les débutants</h1>
+
+    </div>
+
+    <nav class="menu">
+
+     <a href="../index.html">Accueil</a>
+
+
+    <div class="dropdown">
+
+        <a href="#">Politique simplifiée</a>
+
+        <div class="dropdown-content">
+
+            <a href="systeme-politique.html">Article - Le système politique suisse</a>
+            <a href="referendum.html">Vidéo - Référendum</a>
+            <a href="initiative-populaire.html">Vidéo - Initiative populaire</a>
+            <a href="quizz-commune.html">Quiz - Communal, cantonal ou fédéral ?</a>
+            <a href="interview-assurance-invalidité.html">Interview - Assurance invalidité</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="dropdown">
+
+        <a href="#">Économie & travail</a>
+
+        <div class="dropdown-content">
+
+            <a href="article-veritable-richesse-suisse-romande.html">Article - La véritable richesse de la Suisse romande</a>
+            <a href="video-rendre-lor-aux-juifs.html">Vidéo - Rendre l'or aux juifs</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="dropdown">
+
+        <a href="#">Culture</a>
+
+        <div class="dropdown-content">
+
+            <a href="interview-industrie-theatre.html">Interview - La Manufacture, une école haute en créativité</a>
+            <a href="article-montreux-jazz-festival.html">Article - Montreux Jazz Festival</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="dropdown">
+
+        <a href="Lieux-à-ne-pas-manquer.html">Lieux à découvrir</a>
+
+    </div>
+
+
+    <div class="dropdown">
+
+        <a href="#">Tips romands</a>
+
+        <div class="dropdown-content">
+
+            <a href="Top 10.html">Top - Top 10 des aliments incontournables en Romandie</a>
+            <a href="Dictionnaire.html">Dictionnaire - Lexique de secours pour se faire comprendre en terre romande</a>
+
+        </div>
+
+    </div>
+
+
+</nav>
+
+</header>
+
+<main>
+
+    <nav class="fil-ariane">
+
+        <a href="../index.html">Accueil</a>
+
+        <span>/</span>
+
+        <span class="page-actuelle">Lieu à découvrir</span>
+
+    </nav>
+
+
+<section class="carte-romandie">
+
+<div class="carte">
+
+    <img src="../images/carte-suisse-interractive.svg" alt="Carte de la Suisse romande">
+
+    <button class="point ville" id="lausanne" aria-label="Lausanne"></button>
+
+  <div class="info-lieu cachee" id="info-lausanne">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Carte virtuelle/armoirie de Lausanne.png" alt="Drapeau de Lausanne">
+        <h3>Lausanne</h3>
+        </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/Lausanne-vrai.jpeg" alt="Lausanne">
+        <h3>Capitale Olympique</h3>
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+       Les premières traces d'hommes à Lausanne remontent environ au VIe siècle avant J.-C. Depuis ce temps, Lausanne s'est développée jusqu'à devenir la quatrième ville du pays en nombre d'habitants, juste après Zurich, Genève et Bâle. De ce fait, elle est la deuxième ville la plus peuplée de Suisse romande. La grande particularité de Lausanne est le nombre d'institutions internationales liées au sport qu'elle abrite entre ses murs. Depuis 1915, s'y trouve le siège du Comité international olympique (CIO). Mais on peut aussi retrouver une cinquantaine de fédérations et d'organisations sportives internationales et nationales comme l'Agence mondiale antidopage (AMA). L'épithète de Capitale olympique lui a été attribuée en 1993.
+    </p>
+
+
+    <!-- ACTIVITÉ 1 -->
+    <div class="activite">
+        <h3><strong>Activités</strong></h3>
+        <h4><strong>Musée olympique</strong></h4>
+
+        <p>
+           Le musée olympique, situé sur les hauteurs du quai d'Ouchy au bord du Léman, a ouvert ses portes le 23 juin 1993 à Lausanne. La thématique des Jeux olympiques va y être abordée, en passant de ses origines à l'esprit du sport, jusqu'à la vie quotidienne d'un sportif olympique.
+        </p>
+
+        <img src="../images/Carte virtuelle/alimentarium.jpg" alt="Photo de l'activité">
+
+       <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte (dès 16 ans)</td>
+            <td>CHF 20.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (jusqu'à 15 ans)</td>
+            <td>Gratuit</td>
+        </tr>
+        <tr>
+            <td>Réduit (étudiant/AVS)</td>
+            <td>CHF 14.-</td>
+        </tr>
+        <tr>
+            <td>Groupes à partir de 10 personnes</td>
+            <td>CHF 14.-</td>
+        </tr>
+        <tr>
+            <td>Carte Raiffeisen Young member plus</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table>
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br>Je trouve ce musée particulièrement attractif par la manière diversifiée qu'il a d'aborder sa thématique. Les visiteurs n'ont pas le temps de s'ennuyer car l'information nous est transmise de manières très variées. Tout au long de la visite, nous sommes guidés par des vidéos, des audios explicatifs, des costumes ou encore des frises chronologiques. De plus, le dernier étage nous permet de clôturer le musée en beauté avec une partie jeu sur la thématique des Jeux olympiques.
+        </p>
+        <strong>Pour plus d'informations :</strong>
+        <a href="https://www.olympics.com/museum/fr/visiter" target="_blank">
+        https://www.olympics.com/museum/fr/visiter
+        </a>
+    </div>
+
+
+    <!-- ACTIVITÉ 2 -->
+    <div class="activite">
+
+        <h4><strong>Le théâtre de Vidy</strong></h4>
+
+        <p>
+            L'infrastructure de Vidy a été construite sous le nom initial de ''Théâtre de l'Expo'' en 1964 dans le cadre de l'Exposition nationale par Max Bill. Ce théâtre compte quatre salles connues sous les noms de Charles Apothéloz (430 places), La Passerelle (98 places), René Gonzalez (150 places) et Le Pavillon (250 places). Mais un des emplacements principaux de Vidy reste le foyer connu sous le nom de La Kantina. C'est un espace modulable qui permet d'accueillir différents types de manifestations. Ce centre multiculturel propose de nombreux spectacles qui peuvent prendre la forme de pièces de théâtre, de démonstrations de danse ou encore de performances artistiques.
+        </p>
+
+        <img src="../images/Carte virtuelle/théâtre de vidy.jpg" alt="Photo de l'activité">
+
+        <p class="tarif">
+            <strong>Tarif :</strong> Les prix varient de 15.–* | 20.– | 25.– | 30.– | 40.– | 50.– CHF
+            *Moins de 26 ans/Carte Culture
+
+        </p>
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br> Le complexe de Vidy propose des évènements très polyvalents. La programmation variée permet d'amener tous types de spectacles en terre romande. Je trouve aussi que les tarifs pour les moins de 26 ans peuvent être très attractifs selon le spectacle et peuvent permettre d'économiser sur un billet de type standard. De plus, le fait que l'infrastructure de Vidy soit au bord du lac apporte un petit bonus.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.vidy.ch/fr/" target="_blank">https://www.vidy.ch/fr/</a>
+    </div>
+
+
+    <!-- ACTIVITÉ 3 -->
+    <div class="activite">
+
+        <h4><strong>Pulloff Théâtre</strong></h4>
+
+        <p>
+           Le Pulloff Théâtre, par son emplacement dans les anciens magasins de la ville, permet une vraie évasion de Lausanne. Certes moins connu que l'infrastructure de Vidy, ce lieu permet aux compagnies de théâtre indépendantes de se produire sur scène.
+        </p>
+
+        <img src="../images/Carte virtuelle/Le pulloff théâtre.jpg" alt="Photo de l'activité">
+
+        <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte</td>
+            <td>CHF 35.-</td>
+        </tr>
+        <tr>
+            <td>AVS, étudiants, chômeurs</td>
+            <td>CHF 27.-</td>
+        </tr>
+        <tr>
+          <td>*Prix réduit pour les Pro, Cultissime, Pass Culture, Caritas</td>
+        </tr>
+    </tbody>
+</table>
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br> J'ai connu le Pulloff Théâtre sur un coup de chance. Nous voulions instaurer avec un ami la tradition d'aller au théâtre ensemble au moins une fois par mois afin de nous ouvrir un peu plus au monde de la culture. Je me souviens que, débutante que j'étais encore dans le monde culturel, j'avais juste tapé sur un moteur de recherche ''pièce de théâtre en Suisse''. Je suis assez vite tombée sur une annonce promouvant une pièce d'Antigone. Adorant cette figure mythique, il ne m'en fallut pas plus pour réserver deux places pour mon ami et moi. C'est de cette manière que je me suis retrouvée dans cette petite salle de 50 places à l'ambiance intimiste. À la fin de la représentation, ma première envie a été de revenir. Une action que j'ai réitérée à de nombreuses reprises.
+        </p>
+        <strong>Pour plus d'informations </strong>
+        <a href="https://www.pullofftheatre.ch/" target="_blank">https://www.pullofftheatre.ch/</a>
+    </div>
+
+
+    <!-- FUN FACT -->
+    <div class="fun-fact">
+
+        <h4>Fun fact</h4>
+
+        <p>
+           Lausanne est principalement connue pour ses montées et descentes abruptes. Cela n’a rien d’étonnant car la ville prend fondation sur trois collines. Si vous avez peur de ces pentes dénivelées, ne vous inquiétez pas car vous pourrez toujours vous servir d'une vingtaine d'ascenseurs éparpillés un peu partout dans la ville comme raccourcis.
+        </p>
+
+    </div>
+
+</div>
+
+    <button class="point ville" id="vevey" aria-label="Vevey"></button>
+    <div class="info-lieu cachee" id="info-vevey">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Carte virtuelle/armoirie de vevey.jpg" alt="Drapeau de Vevey">
+
+        <h3>Vevey</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/vevey.jpg" alt="Vevey">
+        <h3>Ville d'image</h3>
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+       Le concept de Ville d'Image commence à apparaître en 1998 pour mettre en avant l'industrie de la photographie qui occupe une place importante à Vevey. En effet, on peut y retrouver de multiples entreprises et institutions liées à l'image et à la communication, que ce soit sur le plan culturel ou économique. Par exemple, le Centre d'Enseignement Professionnel de Vevey (CEPV) offre différentes formations en photographie et en communication visuelle. La ville comporte aussi de nombreux musées abordant la thématique de la photographie comme le Musée suisse de l'appareil photographique qui retrace l'histoire et les pratiques de la photographie de ses origines à la révolution numérique.
+    </p>
+
+
+    <!-- ACTIVITÉ 1 -->
+    <div class="activite">
+        <h3><strong>Activités</strong></h3>
+        <h4>Alimentarium</h4>
+
+        <p>
+            L'Alimentarium est plus qu'un simple musée sur l'alimentation. Il amène ses visiteurs à avoir des réflexions sur le système alimentaire en lien tant avec l'environnement qu'avec la santé planétaire. Le musée se prolonge avec un potager qui comporte une trentaine de variétés et une partie cuisine où plusieurs activités en lien avec l'art culinaire sont proposées au public. L'Alimentarium comporte aussi un espace junior avec des ateliers de cuisine adaptés aux enfants.
+        </p>
+
+        <img src="../images/Carte virtuelle/alimentarium.jpg" alt="Photo de l'activité">
+
+        <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte</td>
+            <td>CHF 15.-</td>
+        </tr>
+        <tr>
+            <td>Tarif réduit</td>
+            <td>CHF 6.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (de 6 à 15 ans)</td>
+            <td>CHF 14.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (jusqu'à 5 ans)</td>
+            <td>Gratuit</td>
+        </tr>
+        <tr>
+            <td>Carte Raiffeisen Young member plus</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table>
+        <p class="avis">
+            <strong>Mon avis :</strong><br> Lors de mon enfance, j'ai assisté à plusieurs ateliers de cuisine de l'espace junior et, d'après les bons souvenirs que j'ai pu garder, je recommande cette expérience. Attention, il faut s'inscrire au préalable avant l'activité. Quant au musée, il est varié et convient vraiment à tous les âges. Il manie avec brio les différents types de supports mis à disposition des visiteurs, au point qu'il est impossible de s'ennuyer au cours de la visite. La dernière fois que je m'y suis rendue avec ma meilleure amie, les 2h30 de notre visite nous ont donné l'impression que cela ne faisait qu'une heure que nous avions commencé notre visite.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.alimentarium.org/fr" target="_blank">https://www.alimentarium.org/fr</a>
+    </div>
+
+
+    <!-- ACTIVITÉ 2 -->
+    <div class="activite">
+
+        <h4>Musée Charlie Chaplin</h4>
+
+        <p>
+            Le domaine a ouvert ses portes le 17 avril 2016, le jour suivant le 127e anniversaire de la naissance de ce dernier. C'est le seul musée dans le monde à être dédié à cet illustre personnage ainsi qu'à ses œuvres et à sa famille. Il prend la forme d'un parcours d'environ 2h30 à faire en famille ou entre amis.
+        </p>
+
+        <img src="../images/Carte virtuelle/Musée Charlie Chaplin.jpg" alt="Photo de l'activité">
+
+        <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Ticket daté individuel</th>
+            <th>Tickets à date libre</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte (dès 16 ans)</td>
+            <td>CHF 26.-</td>
+            <td>CHF 30.-</td>
+        </tr>
+        <tr>
+            <td>Jeune (de 6 à 15 ans)</td>
+            <td>CHF 19.-</td>
+            <td>CHF 22.-</td>
+        </tr>
+        <tr>
+            <td>Senior (dès 60 ans) à</td>
+            <td>-</td>
+            <td>CHF 29.-</td>
+        </tr>
+         <tr>
+            <td>Étudiant</td>
+            <td>-</td>
+            <td>CHF 25.-</td>
+        </tr>
+    </tbody>
+</table>
+        <p class="avis">
+            <strong>Mon avis :</strong><br> Le point fort du musée reste indéniablement sa grandeur. Il se visite autant à l'intérieur de ses murs qu'à l'extérieur. Si vous avez la chance d'aller le visiter un jour de beau temps, vous pourrez profiter d'une balade sur les sentiers qui bordent le magnifique jardin de la demeure Chaplin. Je trouve que le musée permet une mise en abyme totale, autant dans l'univers de Charlie Chaplin que dans la vie de Charles Spencer Chaplin, rendue possible en partie grâce aux innombrables extraits de films et d'archives projetés tout au long de la visite.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.chaplinmuseum.com/fr" target="_blank">https://www.chaplinmuseum.com/fr</a>
+    </div>
+
+
+    <!-- ACTIVITÉ 3 -->
+    <div class="activite">
+
+        <h4>Le National</h4>
+
+        <p>
+         Le National prend la forme d'un restaurant-bar idéalement situé à côté de la place du marché et au bord du lac. C'est un lieu agréable avec une terrasse qui nous donne le sentiment de quitter la ville. Je vous le recommande pour passer un chaleureux repas avec une carte de choix proposant de nombreuses alternatives pour différents régimes alimentaires ou juste pour prendre un verre. Le choix des boissons, qu'elles soient chaudes ou froides, bénéficie aussi d'une carte variée.
+        </p>
+
+        <img src="../images/Carte virtuelle/Le nationale.jpg" alt="Photo de l'activité">
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.lenational.ch/" target="_blank">https://www.lenational.ch/</a>
+
+    </div>
+
+
+    <!-- FUN FACT -->
+    <div class="fun-fact">
+
+        <h4>Fun fact</h4>
+
+        <p>
+           Dans le lac Léman se trouve une fourchette en acier inoxydable de 8 mètres de haut. Cette œuvre d'art a été installée en face de l'Alimentarium en l'honneur des 10 ans du musée. Si vous observez attentivement, vous apercevrez des poils à son sommet !
+        </p>
+
+    </div>
+
+</div>
+    <button class="point ville" id="gruyeres" aria-label="Gruyère"></button>
+    <div class="info-lieu cachee" id="info-gruyeres">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Carte virtuelle/drapeau ville de gruyère.jpg" alt="Drapeau de Lausanne">
+        <h3>Gruyère</h3>
+
+    </div>
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/Gruyère.jpg" alt="Gruyères">
+        <h3>Une ville médiévale</h3>
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+       Juchée sur sa colline, Gruyère fut connue en 1195 pour être une ville de marché se développant sous le pouvoir du comte Rodolphe Ier de Gruyère. De nos jours, cette commune dispose encore d'un remarquable patrimoine médiéval. Quand on se promène dans ses ruelles, on ne peut qu'être happé par le décor historique qu'elles nous offrent avec ses bâtiments pittoresques qui ont survécu à travers les âges. Depuis 2016, le village fait partie de l'association ''Les plus beaux villages de Suisse'' et obtient en 2021 le label Meilleurs villages touristiques de l'Organisation mondiale du tourisme (OMT).
+    </p>
+
+
+    <!-- ACTIVITÉ 1 -->
+    <div class="activite">
+        <h3><strong>Activités</strong></h3>
+        <h4>Le musée Giger</h4>
+
+        <p>
+            L'histoire du musée commence à l'occasion du 50ème anniversaire de Giger. En l'honneur de cet évènement, il organisa une exposition au château de Gruyère nommée ''Alien dans ses meubles''. Giger tomba sous le charme de cette ville et décida d'acheter le château Saint-Germain dans le but d'en faire un musée au vu de l'immense succès que fut sa dernière exposition à Gruyère. L'inauguration du musée se déroula le 21 juin 1998. Les visiteurs peuvent retrouver les œuvres de Giger allant du début des années 1960 jusqu'à maintenant.
+
+        </p>
+
+        <img src="../images/Carte virtuelle/musée Giger.jpg" alt="Photo de l'activité">
+
+        <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Ticket individuel</th>
+            <th>Ticket de groupe</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte</td>
+            <td>CHF 12.50</td>
+            <td>CHF 8.50</td>
+        </tr>
+        <tr>
+            <td>AVS/Étudiant/Militaire</td>
+            <td>CHF 8.50</td>
+            <td>CHF 7.50</td>
+        </tr>
+        <tr>
+            <td>Enfant</td>
+            <td>CHF 4.-</td>
+            <td>CHF 3.-</td>
+        </tr>
+        <tr>
+            <td>Carte Raiffeisen Young member plus</td>
+            <td>Gratuit</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table> 
+        </p>
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br> Je trouve que le musée nous garantit une expérience immersive dans les œuvres d'arts de Giger. A travers celle-ci se démène un combat intérieur du visiteur pour essayer d'entrer tant bien que mal dans le psyché de cet illustre artiste. L'atmosphère du musée nous coupe de l'ambiance tradition du village nous donnant l'impression de vivre une expérience hors du temps. <br> 
+            <strong>Attention certaines œuvres peuvent choquer la sensibilité des plus jeunes.</strong>
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.hrgiger.com/" target="_blank">https://www.hrgiger.com/</a>
+    </div>
+
+
+    <!-- ACTIVITÉ 2 -->
+    <div class="activite">
+
+        <h4>Le château de Gruyère</h4>
+
+        <p>
+            Le château de Gruyère fait office de véritable emblème historique dans la région. La première fois qu'il est mentionné est dans des archives remontant à 1244. A cette époque, l'édifice était la résidence officielle d'une famille noble, les comtes de Gruyère. Le château a été bâti selon le modèle du carré savoyard qui a été développé par la famille des savoie dans un but militaire. L'édifice est protégé par une enceinte presque carré. Mais en 1554 à cause de problèmes d'argent, le château fut confisqué par les principaux créanciers, Berne et Fribourg.
+        </p>
+
+        <img src="../images/Carte virtuelle/châteaud de gruyère.jpg" alt="Photo de l'activité">
+
+        <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte</td>
+            <td>CHF 13.-</td>
+        </tr>
+        <tr>
+            <td>AVS/Étudiant</td>
+            <td>CHF 9.-</td>
+        </tr>
+        <tr>
+            <td>Groupe (dès 15 entrées ‘’adulte’’)</td>
+            <td>CHF 9.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (de 6 à 15 ans)</td>
+            <td>CHF 5.-</td>
+        </tr>
+        <tr>
+            <td>Moins de 6 ans</td>
+            <td>Gratuit</td>
+        </tr>
+         <tr>
+            <td>Forfait Famille (deux adultes et un à trois enfants)</td>
+            <td>CHF 29.-</td>
+        </tr>
+        <tr>
+            <td>Passeport Musées suisses/ Membres plus Raiffeisen/AMS/ICOM</td>
+            <td>Gratuit</td>
+        </tr>
+        <tr>
+            <td>Ami.e du Château</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table>
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br>Dans ce château vivait la belle Luce qui était la femme la plus magnifique de la région. Cette légende est une des raisons pour lesquelles je porte le prénom que j'ai actuellement. D'ailleurs, le surnom que mon père me donnait était Luce. De ce fait, je pense ressentir une attache toute particulière avec ce lieux. J'y le visite depuis ma tendre enfance et je n'ai jamais été déçu. Chaque visite me fait replonger dans son univers médiéval comme si c'était la première fois que je le découvrais.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://www.chateau-gruyeres.ch/fr" target="_blank">https://www.chateau-gruyeres.ch/fr</a>
+
+    </div>
+
+    <!-- FUN FACT -->
+    <div class="fun-fact">
+
+        <h4>Fun fact</h4>
+
+        <p>
+            On a tendance à confondre le gruyère et l'emmental. Mais il y a une technique très simple pour les différencier. Le gruyère n'est pas troué alors que l'emmental possède des trous.
+        </p>
+
+    </div>
+
+</div>
+
+    <button class="point ville" id="loeche" aria-label="Loèche-les-Bains"></button>
+    <div class="info-lieu cachee" id="info-loeche">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Carte virtuelle/drapeau leukerbad.png" alt="Drapeau de Lausanne">
+        <h3>Loèche-les-Bains</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/Loèche les bain.jpg" alt="Leukerbad">
+        <h3>Le cœur de la sources des alpes</h3>
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+       Cette commune qui prend place dans la très rare partie germanophone de la Suisse romande est connue pour ses sources thermales. Bien que les premières traces de Loèche-les-Bains remontent au IIe siècle après J.-C., il faudra attendre 1478 pour voir apparaître les premières traces de bains thermaux. De plus, c'est à cette époque que les premières auberges ouvrent leurs portes. De nos jours, Loèche-les-Bains est une destination très appréciée des touristes, perchée à 1'411 mètres dans le sud-ouest du canton du Valais. Ce lieu est idéal pour des vacances ou un simple week-end d'escapade tout au long de l'année grâce à son large choix d'activités, passant de la simple sortie au ski à un après-midi détente au spa.
+    </p>
+
+
+    <!-- ACTIVITÉ 1 -->
+    <div class="activite">
+        <h3><strong>Activités</strong></h3>
+        <h4>Sentiers des sources thermales</h4>
+
+        <p>
+            <strong>Difficulté facile</strong> <br>
+           Le sentier des sources thermales est un parcours d'environ une heure qui se déroule le long d'un sentier d'une longueur d'environ 600 mètres et suspendu à une hauteur minimale de quatre mètres au-dessus d'un torrent. Ce parcours offre la chance à ses promeneurs de pouvoir franchir un pont suspendu long de 21 mètres qui débouche face à une cascade de 35 mètres de haut. Il permet de partir à la découverte du monde fascinant de l'eau thermale et de comprendre le chemin qu'elle peut parcourir pour arriver dans nos grands bains chauds. Les visiteurs peuvent même entrer en contact direct avec cette fameuse eau chaude en la puisant directement depuis une source avec un petit treuil.
+        </p>
+
+        <img src="../images/Carte virtuelle/sentier des sources.jpg" alt="Photo de l'activité">
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br> C'est un endroit qui me tient particulièrement à cœur car il fait partie de mes premiers souvenirs de promenade que j'ai effectués avec ma famille. Je pense qu'il ne se passe pas un été depuis mon plus jeune âge où je n'ai pas parcouru ce sentier. Je le recommande fortement pour la beauté de ses paysages et les bons souvenirs qu'il vous laissera. C'est une balade qui plaira aux plus jeunes comme aux plus âgés.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://leukerbad.ch/fr/tour/parcours-des-sources-thermales-57926104" target="_blank">https://leukerbad.ch/fr/tour/parcours-des-sources-thermales-57926104</a>
+
+    </div>
+
+
+    <!-- ACTIVITÉ 2 -->
+    <div class="activite">
+
+        <h4>Les échelles d'Albinen</h4>
+
+        <p>
+            <strong>Difficulté moyenne</strong> <br>
+           Ce sentier pédestre s'est construit sur la plus ancienne via ferrata de Suisse, qui datait de 1781. Ce passage était l'unique route commerciale située entre les villages d'Albinen et de Loèche-les-Bains. Les échelles, au nombre de huit, mènent les promeneurs directement au pied du téléphérique de Flachen-Torrentalp. Les promeneurs peuvent continuer leur petit tour jusqu'à Albinen, qui est un village authentique valaisan.
+        </p>
+
+        <img src="../images/Carte virtuelle/Les échelles d'Albinen.jpg" alt="Photo de l'activité">
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br>C'est moi qui ai fait découvrir ce sentier à ma famille et la manière dont je l'ai découvert mérite d'être racontée. Je ne me souviens plus exactement de l'âge que j'avais au moment des faits mais je me rappelle que c'était au cours d'une promenade avec mon cavalier king Charles. Cela faisait déjà bien 20 minutes que j'avais commencé la balade et, pour une raison obscure, je ne voulais pas rebrousser chemin. Même lorsque je suis arrivée devant un panneau mettant en garde que le reste du parcours devait être emprunté par des promeneurs avertis et ne souffrant pas de vertige, je n'ai pas songé à m'arrêter alors que j'étais toujours accompagnée de mon chien. Aussi absurde et dangereux que cela puisse paraître, mon inconscience enfantine m'a poussée à emprunter les deux premières échelles avec mon pauvre canidé sous le bras. D'ailleurs, à la fin de la seconde échelle, les promeneurs ont la chance d'arriver dans une sorte de grotte creusée dans les parois de la montagne où se situe un banc qui permet de profiter pleinement de la vue qui s'offre à eux. Évidemment que je ne suis pas allée plus loin avec mon chien mais, par contre, je me suis empressée de retourner à mon logement afin de pouvoir expliquer ma découverte à mes parents. Le lendemain, nous effectuions cette randonnée en famille.<br>
+           <strong>Attention, marche vraiment déconseillée si vous souffrez de vertige.</strong>
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://leukerbad.ch/fr/tour/sur-les-echelles-d-albinen-de-leukerbad-a-albinen-28448853" target="_blank">https://leukerbad.ch/fr/tour/sur-les-echelles-d-albinen-de-leukerbad-a-albinen-28448853</a>
+    </div>
+
+
+    <!-- ACTIVITÉ 3 -->
+    <div class="activite">
+
+        <h4>Le chemin du col de la Gemmi</h4>
+
+        <p>
+            <strong>Difficulté difficile</strong> <br>
+           Le sentier du col de la Gemmi prend son départ dans les hauteurs de Loèche-les-Bains. Ce chemin vous fera arpenter le flanc d'une falaise et vous offrira une vue spectaculaire sur Loèche-les-Bains et les sommets qui l'entourent. Cette marche de deux heures vous mènera sur un itinéraire creusé dans la roche il y a des siècles, permettant de vivre une expérience hors du temps entre nuages et montagnes à celui qui osera l'emprunter. Le parcours prend fin à la station de télécabine de la Gemmi.
+        </p>
+
+        <img src="../images/Carte virtuelle/sentier de la gemmi.jpg" alt="Photo de l'activité">
+
+        <p class="avis">
+            <strong>Mon avis :</strong><br> Je trouve personnellement cette marche très difficile autant pour la montée que pour la descente. Un des meilleurs conseils que je peux vous donner si vous voulez l'effectuer est de partir tôt le matin avant que le soleil ne soit trop haut dans le ciel, car les dernières montées vous seront fort désagréables sous une forte chaleur. Mais malgré la difficulté, la vue panoramique vaut les efforts fournis.
+        </p>
+        <strong>Pour plus d'informations:</strong>
+        <a href="https://leukerbad.ch/fr/tour/col-de-la-gemmi-28448854" target="_blank">https://leukerbad.ch/fr/tour/col-de-la-gemmi-28448854</a>
+    </div>
+
+
+    <!-- FUN FACT -->
+    <div class="fun-fact">
+
+        <h4>Fun fact</h4>
+
+        <p>
+           Loèche-les-Bains dispose du plus grand complexe thermal en Europe. Mais ce n'est pas le seul record que détient cette petite commune car elle possède aussi le plus grand centre de bien-être avec le Lindner Alpentherme qui propose plus de 240 prestations. Ce centre possède ses propres bassins autant extérieurs qu'intérieurs mais il a aussi son propre village valaisan de saunas.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- POINT -->
+<button class="point animation" id="villars-tiercelin" aria-label="Parcours handicaps et nature du Jorat"></button>
+
+
+<!-- BANNIÈRE -->
+<div class="info-lieu cachee" id="info-villars-tiercelin">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Canton/Drapeau Vaud.png" alt="Drapeau">
+
+        <h3>Villars-Tiercelin</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/Parcours handicap et nature.jpg" alt="Photo du lieu">
+
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+
+       Le parcours handicap a un seul objectif qui est de prioriser l'accessibilité aux chaises roulantes. Tout dans ce parcours a été conçu et monté afin de permettre l'accès aux personnes handicapées. Tout au long du sentier, des aires de pique-nique ont été aménagées afin de permettre aux promeneurs de faire une pause boisson ou même de manger. Il y a aussi de multiples sorties aménagées qui permettent de réduire le parcours. Des observatoires ainsi que des exercices équipés spécialement pour les personnes handicapées ont aussi été installés au cours du sentier.
+    </p>
+
+    <!-- PETIT PLUS -->
+    <div class="Petit Plus">
+
+        <h4>Petit Plus</h4>
+
+        <p>
+           Le projet parcours handicap est né d'une idée de Michel Graz qui est le chef d'exploitation des ateliers de la Fondation vaudoise de probation (FVP). De ce fait, ce projet prend une symbolique forte qui est très justement résumée avec cette citation : ''La privation de liberté au service de la privation de mobilité''. Mais ce sentier, en plus d'être ludique et de servir une bonne cause, est aussi écologique. En effet, ce parcours a été fabriqué à partir de chênes qui devaient être abattus pour garantir la pérennité de la forêt. Il est aussi démontable et remontable en fonction des besoins forestiers.
+        </p>
+
+    </div>
+
+
+    <!-- LIEN -->
+    <strong>Pour plus d'informations :</strong>
+
+    <a href="https://handicapnature.ch/" target="_blank">
+        https://handicapnature.ch/
+    </a>
+
+</div>
+
+<!-- POINT -->
+<button class="point animation" id="parc-aigle" aria-label="Parc Aventure"></button>
+
+
+<!-- BANNIÈRE -->
+<div class="info-lieu cachee" id="info-parc-aigle">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Canton/Drapeau Vaud.png" alt="Drapeau">
+
+        <h3>Aigle</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/parcours accrobranche.jpg" alt="Photo du lieu">
+
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+
+      Le parcours aventure d'Aigle, par ses nombreux parcours, promet une expérience pleine d'aventure pour tous les âges. Ce complexe propose quatre parcours kids (4-7 ans) et huit parcours aventuriers (8 ans et +) qui, en tout, font un total de 206 mini-jeux suspendus dans les airs et 30 tyroliennes.<br>
+      Pour les grands amateurs de sensations fortes, vous pourrez peut-être être tentés par la big tyro de 250 mètres de longueur suspendue à 40 mètres de hauteur ou encore par le quick jump qui vous permettra d'atterrir en douceur sur le sol après un saut de 10 mètres. 
+
+    </p>
+
+
+    <!-- INFORMATIONS / TARIF -->
+    
+    <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Kids (de 4 à 7 ans)</td>
+            <td>CHF 17.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (de 8 à 11 ans)</td>
+            <td>CHF 28.-</td>
+        </tr>
+        <tr>
+            <td>Adolescent (de 12 à 15 ans)</td>
+            <td>CHF 32.-</td>
+        </tr>
+        <tr>
+            <td>Apprenti/Étudiant</td>
+            <td>CHF 37.-</td>
+        </tr>
+        <tr>
+            <td>Adulte</td>
+            <td>CHF 42.-</td>
+        </tr>
+        <tr>
+            <td>Accompagnant au sol</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table>
+
+    <!-- PETIT PLUS -->
+    <div class="Petit Plus">
+
+        <h4>Petit Plus</h4>
+
+        <p>
+           Si vous voulez essayer la piste noire avant d'entamer le trajet, réfléchissez bien car c'est un parcours très difficile et exigeant à caractère athlétique. En effet, sa complexité est principalement causée par sa longueur et son manque d'échappatoires. Une fois engagé, il vous sera difficile de faire demi-tour, surtout quand on se retrouve perché sur une plateforme accrochée à une hauteur pouvant atteindre les 20 mètres.
+        </p>
+
+    </div>
+
+
+    <!-- LIEN -->
+    <strong>Pour plus d'informations :</strong>
+
+    <a href="https://parc-aventure.ch/aigle/" target="_blank">
+        https://parc-aventure.ch/aigle/
+    </a>
+
+</div>
+
+<!-- POINT -->
+<button class="point animation" id="mine-bex" aria-label="Mine de sel de Bex"></button>
+
+
+<!-- BANNIÈRE -->
+<div class="info-lieu cachee" id="info-mine-bex">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Canton/Drapeau Vaud.png" alt="Drapeau">
+
+        <h3>Bex</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/Mine de sel Bex.jpg" alt="Photo du lieu">
+
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+    La visite des mines de sel de Bex, qui peut se faire à partir de 4 ans, dure environ 2 heures. Pour commencer à vous immerger dans cet univers si particulier, le parcours commence par une introduction qui vous met face aux débuts de la mine. Puis, les visiteurs ont la chance de pouvoir continuer la visite à bord d'un ancien train minier. C'est à ce moment que le véritable trajet à travers la mine commence.<br>
+    Les mines de sel de Bex méritent le détour par leur authenticité et leur conservation à travers les époques. Actuellement, elles sont les dernières mines à être encore en activité en Suisse.<br>
+    Par contre, pensez à vous habiller assez chaudement si vous cédez à la tentation de les visiter car il fait 18 degrés toute l'année dans la mine.
+
+    </p>
+
+
+    <!-- INFORMATIONS / TARIF -->
+    <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Tarif</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte (dès 16 ans)</td>
+            <td>CHF 26.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (de 6 à 15 ans)</td>
+            <td>CHF 13.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (jusqu'à 6 ans)</td>
+            <td>Gratuit</td>
+        </tr>
+        <tr>
+            <td>Groupes à parti</td>
+            <td>CHF 14.-</td>
+        </tr>
+        <tr>
+            <td>Carte Raiffeisen Young member plus</td>
+            <td>Gratuit</td>
+        </tr>
+    </tbody>
+</table>  
+    <!-- PETIT PLUS -->
+    <div class="Petit Plus">
+
+        <h4>Petit Plus</h4>
+
+        <p>
+        Les mines de sel ont été découvertes par hasard au XVe siècle. Un jour, un berger remarqua que son troupeau buvait toujours à la même source. Intrigué, il décida de goûter l'eau pour savoir ce qui la rendait aussi spéciale et il se rendit compte qu'elle était salée. À partir de cet épisode, les sources d'eau salée furent alors exploitées. Il faudra attendre 1684 pour que l'exploitation des mines commence avec le creusement de la première galerie.
+        </p>
+
+    </div>
+
+
+    <!-- LIEN -->
+    <strong>Pour plus d'informations :</strong>
+
+    <a href="https://salina-helvetica.ch/fr" target="_blank">
+        https://salina-helvetica.ch/fr
+    </a>
+
+</div>
+
+<!-- POINT -->
+<button class="point animation" id="aquaparc" aria-label="Aquaparc"></button>
+
+
+<!-- BANNIÈRE -->
+<div class="info-lieu cachee" id="info-aquaparc">
+
+    <button class="fermer" aria-label="Fermer">×</button>
+
+
+    <!-- EN-TÊTE : DRAPEAU + NOM -->
+    <div class="lieu-header">
+
+        <img src="../images/Canton/Drapeau Vaud.png" alt="Drapeau">
+
+        <h3>Port-Valais</h3>
+
+    </div>
+
+
+    <!-- PHOTO PRINCIPALE -->
+    <div class="photo-principale">
+
+        <img src="../images/Carte virtuelle/aquapark.jpg" alt="Photo du lieu">
+
+    </div>
+
+
+    <!-- PHRASE EXPLICATIVE -->
+    <p class="description-lieu">
+    Aquaparc est un parc aquatique se situant au bord du lac Léman dans le canton du Valais. Il a été conçu afin de pouvoir plaire au plus grand nombre comme aux plus petits. Vous pourrez profiter de la piscine à vagues ou encore de la rivière artificielle et ceux qui veulent profiter d'un peu de détente pourront profiter du jacuzzi réservé uniquement aux adultes. Les plus courageux auront la possibilité de s'essayer à affronter les multiples toboggans présents dans le centre aquatique comme :<br>
+    <strong>Fantastico:</strong> Cette attraction prend la forme d'un toboggan géant qui permettra à vos plus jeunes de se familiariser avec la sensation de glisse.<br>
+    <strong>Black Hole :</strong> Ce toboggan de 177 mètres promet une descente dans le noir total ne vous laissant pas un moment de répit grâce à sa succession de virages.<br>
+    <strong>Jungle twist :</strong> Pour cette nouvelle aventure, plongez-vous au cœur de la jungle mais préparez-vous à encaisser plus de 2G d'accélération au cours de sa descente.<br>
+    Lors de beaux jours, le parc se prolonge aussi à l'extérieur avec un coin repos et de multiples autres surprises pour prolonger vos aventures.
+    </p>
+
+
+    <!-- INFORMATIONS / TARIF -->
+  <table class="tableau-tarifs">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Journée</th>
+            <th>4 heures</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Adulte (dès 14 ans)</td>
+            <td>CHF 49.-</td>
+            <td>CHF 39.-</td>
+        </tr>
+        <tr>
+            <td>Enfant (de 6 à 13 ans)</td>
+            <td>CHF 39.-</td>
+            <td>CHF 35.-</td>
+        </tr>
+        <tr>
+            <td>Tout petit (de 3 à 5 ans)</td>
+            <td>CHF 19.-</td>
+            <td>CHF 15.-</td>
+        </tr>
+    </tbody>
+</table>
+    <!-- PETIT PLUS -->
+    <div class="Petit Plus">
+
+        <h4>Petit Plus</h4>
+
+        <p>
+            Pour les véritables amateurs de sensations fortes, Aquaparc a fait construire le Booster Loop. Cette attraction fait atteindre aux courageux qui osent l'emprunter une vitesse de pointe de 85 km/h et leur fait ressentir 3,6 G d'accélération. Il ne dure en tout qu'environ 8 secondes que les visiteurs qui l'ont emprunté ne sont pas près d'oublier. Le Booster Loop n'est pas inclus dans le billet d'entrée car il faut remplir certaines conditions pour le descendre. Par exemple, il faut peser entre 45 kg et 100 kg et ne pas souffrir de problèmes cardiaques.
+        </p>
+
+    </div>
+
+
+    <!-- LIEN -->
+    <strong>Pour plus d'informations :</strong>
+
+    <a href="https://www.aquaparc.ch/" target="_blank">
+        https://www.aquaparc.ch/
+    </a>
+
+</div>
+
+<script>
+
+const points = document.querySelectorAll(".point");
+
+points.forEach(function(point) {
+
+    const nomLieu = point.id;
+    const info = document.getElementById("info-" + nomLieu);
+
+    point.onclick = function() {
+
+        info.classList.remove("cachee");
+
+    };
+
+});
+
+
+const boutonsFermer = document.querySelectorAll(".fermer");
+
+boutonsFermer.forEach(function(bouton) {
+
+    bouton.onclick = function() {
+
+        bouton.parentElement.classList.add("cachee");
+
+    };
+
+});
+
+</script>
+<footer>
+
+    <p>© La Romandie pour les débutants</p>
+
+</footer>
+
+</body>
+</html>
