@@ -1,0 +1,1652 @@
+body {
+    background-color: #faf8f3;
+    color: #222222;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+header,
+footer {
+    max-width: 1100px;
+    margin: auto;
+}
+header {
+    padding: 25px 0;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.menu a {
+    text-decoration: none;
+    color: #8b1e2d;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.menu a:hover {
+    color: #1d5c63;
+}
+.bouton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    background-color: #8b1e2d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.bouton:hover {
+    background-color: #1d5c63;
+}
+
+.langues {
+    display: flex;
+    gap: 15px;
+}
+
+.langues a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.langues a:hover {
+    color: #8b1e2d;
+}
+.hero img {
+    width: 70%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 40px;
+}
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #faf8f3;
+    min-width: 230px;
+    padding: 15px;
+
+     z-index: 9999;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #222;
+}
+
+header {
+    position: relative;
+    z-index: 9999;
+}
+/* ---------- ARTICLE ---------- */
+
+.article-page{
+    max-width: 760px;
+    margin: 60px auto;
+}
+
+.article-page h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.sous-titre{
+    font-size:1.35rem;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.infos-article{
+    display:flex;
+    gap:12px;
+    color:#777;
+    font-size:0.95rem;
+    margin-bottom:40px;
+}
+
+.article-page img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 45px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.article-content {
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
+.couleur-1 {
+    color: #8b1e2d;
+}
+
+.couleur-2 {
+    color: #1d5c63;
+}
+
+.couleur-3 {
+    color: #24543B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sous-parties {
+    margin-left: 25px;
+}
+
+.sous-parties a {
+    display: block;
+    font-size: 0.95rem;
+}
+
+.conseils-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+
+    width: 120%;
+    margin-left: -10%;
+}
+
+.conseil {
+    width: 100%;
+}
+
+.conseils-grid .bouton-conseil {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+
+.bouton-conseil img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.conseils-grid .bouton-conseil span {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-height: 60px;
+    padding: 15px;
+
+    background-color: #8b1e2d;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info-conseil {
+    display: none;
+    padding: 20px;
+    background-color: #faf8f3;
+}
+
+.info-conseil.ouvert {
+    display: block;
+}
+
+.description-conseil h3 {
+    color: #8b1e2d;
+}
+
+.info-conseil {
+    display: none;
+    padding: 20px;
+    background-color: #faf8f3;
+    text-align: center;
+}
+
+
+/* ===== FRISE CHRONOLOGIQUE ===== */
+
+.frise-chronologique {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 45px;
+}
+
+/* Ligne verticale */
+.frise-chronologique::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background-color: #8b1e2d;
+}
+
+
+/* Chaque événement */
+.evenement-frise {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+/* Bouton contenant la date */
+.date-frise {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/* Point sur la ligne */
+.point-frise {
+    position: absolute;
+
+    left: -39px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #8b1e2d;
+    border: 4px solid #faf8f3;
+
+    border-radius: 50%;
+
+    box-sizing: content-box;
+}
+
+
+/* Date */
+.date {
+    color: #8b1e2d;
+    font-size: 1.25rem;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+
+/* Titre de l'événement */
+.titre-frise {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222222;
+}
+
+
+/* Panneau fermé */
+.contenu-frise {
+    display: none;
+
+    margin-top: 20px;
+    padding: 25px;
+
+    background-color: #faf8f3;
+
+    border-left: 4px solid #8b1e2d;
+}
+
+
+/* Panneau ouvert */
+.contenu-frise.ouvert {
+    display: block;
+}
+
+
+/* Paragraphes */
+.contenu-frise p {
+    line-height: 1.7;
+}
+
+
+/* Dates internes 1840 / 1845 / etc. */
+.sous-date {
+    margin-bottom: 25px;
+}
+
+.sous-date strong {
+    color: #8b1e2d;
+    font-size: 1.1rem;
+}
+
+.sous-date p {
+    margin-top: 5px;
+}
+
+.article-page p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.liste-organisateurs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.organisateur {
+    position: relative;
+}
+
+.carte-organisateur {
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.carte-organisateur img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+.legende-organisateur {
+    padding: 15px;
+}
+
+.legende-organisateur h3 {
+    margin: 0 0 5px;
+    color: #8b1e2d;
+}
+
+.legende-organisateur p {
+    margin: 0;
+}
+
+
+/* BANDEROLE */
+
+.banderole-organisateur {
+    display: none;
+    position: relative;
+
+    width: 700px;
+    max-width: 90vw;
+
+    margin-top: 15px;
+    padding: 25px;
+
+    background-color: #faf8f3;
+    border-left: 4px solid #8b1e2d;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banderole-organisateur.ouverte {
+    display: block;
+}
+
+.fermer {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.info-chambre p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ---------- FIL D'ARIANE ---------- */
+.fil-ariane {
+    max-width: 760px;
+    margin: 40px auto 35px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ddd8cd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.fil-ariane a {
+    text-decoration: none;
+    color: #777;
+    transition: color 0.3s;
+}
+
+.fil-ariane a:hover {
+    color: #8b1e2d;
+}
+
+.fil-ariane span {
+    color: #aaa;
+}
+
+.page-actuelle {
+    color: #8b1e2d !important;
+    font-weight: 600;
+}
+
+.fil-ariane + .badge-media,
+.fil-ariane + .badge-container {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+/* ---------- BADGE MÉDIA ---------- */
+
+.type-media {
+    display: inline-block;
+    background-color: #f1ede4;
+    border: 1px solid #d9d2c3;
+    color: #8b1e2d;
+    padding: 8px 18px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+/* ---------- TYPOGRAPHIE ---------- */
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ---------- AU PROGRAMME ---------- */
+
+.au-programme {
+    background: #f6f2e8;
+    border: 1px solid #ddd8cd;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin: 40px 0 50px;
+}
+
+.au-programme h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.au-programme ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.au-programme li {
+    margin-bottom: 12px;
+}
+
+.au-programme li:last-child {
+    margin-bottom: 0;
+}
+
+.au-programme a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.au-programme a:hover {
+    color: #8b1e2d;
+}
+/* ---------- CARTES DECOUVERTE ---------- */
+
+.suite-decouverte {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd8cd;
+}
+
+.suite-decouverte h2 {
+    margin-bottom: 35px;
+}
+
+
+/* CONTENEUR DES 3 CARRÉS */
+.cartes-decouverte {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* CHAQUE CARRÉ INDIVIDUEL */
+.carte-decouverte {
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+}
+
+.carte-decouverte img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+
+}
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,0.75)
+    );
+
+}
+
+.carte-decouverte:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+.overlay h3 {
+
+    color: white;
+
+    margin: 15px 0 10px;
+
+    font-size: 1.5rem;
+
+}
+
+
+.overlay p {
+
+    margin: 0;
+
+    color: white;
+
+}
+
+
+.badge-media {
+    display: inline-block;
+    align-self: flex-start;
+
+    padding: 8px 16px;
+
+    background: rgba(255,255,255,0.9);
+    color: #8b1e2d;
+
+    border-radius: 4px;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* ---------- LE SAVAIS-TU ? ---------- */
+
+.savais-tu {
+
+    margin: 50px 0;
+
+    padding: 25px 30px;
+
+    background-color: #f6f2e8;
+
+    border-left: 4px solid #8b1e2d;
+
+}
+
+
+.savais-tu h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+
+}
+
+
+.savais-tu p {
+
+    margin: 0;
+
+    line-height: 1.8;
+
+}
+
+/* ---------- INTERVIEW ---------- */
+
+.interview p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.questions-reponses {
+
+    margin-top: 60px;
+
+}
+
+.question {
+
+    margin-bottom: 60px;
+
+}
+
+.question h3 {
+
+    color: #8b1e2d;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 20px;
+
+}
+
+.question p {
+
+    line-height: 1.9;
+
+    font-size: 1.1rem;
+
+}
+
+.citation-interview {
+
+    margin: 80px auto;
+
+    max-width: 700px;
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.2rem;
+
+    font-style: italic;
+
+    color: #8b1e2d;
+
+    line-height: 1.5;
+
+}
+
+.question {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.question > h3 {
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+.question > p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.article-page .question > h3 {
+    font-size: 1.5rem !important;
+}
+
+.article-page .question > p {
+    font-size: 1.25rem !important;
+    line-height: 1.7;
+}
+/* =========================
+   DICTIONNAIRE
+   ========================= */
+
+.dictionnaire {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.dictionnaire h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.dictionnaire .sous-titre {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.liste-mots {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.entree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.definition {
+    flex: 1;
+}
+
+.definition h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #8b1e2d;
+}
+
+.definition p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.illustration {
+    width: 250px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 700px) {
+
+    .entree {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .illustration {
+        width: 100%;
+        height: 220px;
+    }
+
+}
+/* =========================
+   DÉCOUVRIR LA ROMANDIE
+========================= */
+
+.decouvrir-romandie {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.decouvrir-romandie h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.intro-romandie {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* GRILLE DES CANTONS */
+
+.cantons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CHAQUE CANTON */
+
+.canton {
+    width: 100%;
+}
+
+
+/* DRAPEAU */
+
+.drapeau-canton {
+    width: 100%;
+    border: none;
+    background: #faf8f3;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drapeau-canton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.drapeau-canton img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.drapeau-canton span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8b1e2d;
+}
+
+
+/* BANNIÈRE D'INFORMATION */
+
+.info-canton {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease;
+    overflow: hidden;
+    width: 220%;
+    margin-left: -20%;
+}
+
+.info-canton.ouvert {
+    grid-template-rows: 1fr;
+}
+
+.info-contenu {
+    min-height: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 0 20px;
+    background: #f1eee7;
+    border-radius: 0 0 10px 10px;
+}
+
+.info-canton.ouvert .info-contenu {
+    padding: 25px 20px;
+}
+
+
+.description-canton h3 {
+    color: #8b1e2d;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.description-canton p {
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* IMAGE DE LOCALISATION */
+
+.info-contenu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* VERSION MOBILE */
+
+@media (max-width: 700px) {
+
+    .cantons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-contenu {
+        grid-template-columns: 1fr;
+    }
+
+    .info-contenu img {
+        height: 200px;
+    }
+
+}
+/* Canton dans la colonne du milieu */
+.canton:nth-child(3n + 2) .info-canton {
+    margin-left: -60%;
+}
+
+/* Canton dans la colonne de gauche */
+.canton:nth-child(3n + 1) .info-canton {
+    margin-left: 0;
+}
+
+/* Canton dans la colonne de droite */
+.canton:nth-child(3n) .info-canton {
+    margin-left: -120%;
+}
+.info-contenu img {
+    width: 100%;
+    height: auto;
+}
+.pourquoi-site p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align : justify;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #8b1e2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.hero-button:hover {
+    background-color: #1d5c63;
+}
+
+.carte {
+    position: relative;
+    width: 65%;
+    max-width: 850px;
+    margin: -100px auto 40px;
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.point {
+    position: absolute !important;
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    max-width: 16px !important;
+    min-height: 16px !important;
+    max-height: 16px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    border: 1px solid #faf8f3;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.point.ville {
+    background-color: #000;
+}
+
+.point.animation {
+    background-color: #1d5c63;
+}
+
+.point::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: #faf8f3;
+    color: #8b1e2d;
+    padding: 5px 8px;
+    border-radius: 4px;
+    
+    font-size: 0.8rem;
+    white-space: nowrap;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    
+    pointer-events: none;
+    z-index: 30;
+}
+
+.point:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.photo-principale img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo-principale h3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.tableau-tarifs {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.tableau-tarifs th,
+.tableau-tarifs td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tableau-tarifs th {
+    background-color: #8b1e2d;
+    color: white;
+    font-weight: bold;
+}
+
+.tableau-tarifs td:last-child {
+    font-weight: bold;
+}
+
+/* POSITION DES VILLES */
+
+#lausanne {
+    left: 37.5%;
+    top: 64%;
+}
+
+#vevey {
+    left: 48%;
+    top: 66%;
+}
+
+#gruyeres {
+    left: 59%;
+    top: 61.2%;
+}
+
+#loeche {
+    left: 87%;
+    top: 70.3%;
+}
+
+/* POSITION DES ANIMATIONS */
+
+#villars-tiercelin {
+    left: 40.5%;
+    top: 60%;
+}
+
+#parc-aigle {
+    left: 56%;
+    top: 74%;
+}
+
+#mine-bex {
+    left: 57%;
+    top: 76.5%;
+}
+
+#aquaparc {
+    left: 48%;
+    top: 69.3%;
+}
+
+/* BANNIERE */
+
+.info-lieu {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    background-color: #faf8f3;
+    border-top: 3px solid #8b1e2d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 20;
+}
+
+.info-lieu.cachee {
+    display: none;
+}
+
+.lieu-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.lieu-header img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.lieu-header h3 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+#info-lausanne {
+    left: 16.5%;
+    top: 64.7%;
+}
+
+#info-vevey {
+    left: 27%;
+    top: 66.7%;
+}
+
+#info-gruyeres {
+    left: 38%;
+    top: 61.9%;
+}
+
+#info-loeche {
+    left: 65.5%;
+    top: 70.906%;
+}
+
+#info-villars-tiercelin {
+    left: 20%;
+    top: 60.55%;
+}
+
+#info-parc-aigle {
+    left: 36%;
+    top: 74.6%;
+}
+
+#info-mine-bex {
+    left: 37%;
+    top: 77.1%;
+}
+
+#info-aquaparc {
+    left: 28%;
+    top: 69.9%;
+}
+
+.fermer {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.carte-romandie h2 {
+    position: relative;
+    left: 171px;
+}
+/* TOP 10 */
+.top10 {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    text-align:justify;
+}
+
+.classement-produit {
+    border-top: 1px solid #8b1e2d;
+    padding: 40px 0;
+}
+
+.produit-entete {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.produit-titre {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.rang {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8b1e2d;
+}
+
+.produit-titre h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.produit-infos p,
+.produit-origine p {
+    margin: 5px 0;
+}
+
+.produit-origine {
+    text-align: right;
+}
+
+.produit-contenu {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.produit-description {
+    line-height: 1.7;
+}
+
+.produit-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ADAPTATION MOBILE */
+
+@media (max-width: 768px) {
+
+    .produit-entete {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .produit-origine {
+        text-align: left;
+    }
+
+    .produit-contenu {
+        grid-template-columns: 1fr;
+    }
+
+    .produit-photo img {
+        height: auto;
+    }
+}
+
+/* Quiz */
+.quiz-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.fil-ariane {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+}
+
+.fil-ariane a {
+    color: #8b1e2d;
+    text-decoration: none;
+}
+
+.fil-ariane span {
+    margin: 0 5px;
+}
+
+.type-media {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border: 1px solid #8b1e2d;
+    border-radius: 4px;
+
+    color: #8b1e2d;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.intro-quiz h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    margin: 0 0 20px;
+    color: #222222;
+}
+
+.phrase-intro {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.image-quiz {
+    display: block;
+
+    width: 65%;
+    max-width: 500px;
+    height: auto;
+
+    margin: 70px auto 5px auto;
+}
+
+.quiz {
+    width: 90%;
+    max-width: 650px;
+
+    margin: 5px auto 60px auto;
+}
+
+.question {
+    width: 100%;
+    padding: 35px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.question h2 {
+    width: 75%;
+    margin: 0 auto 25px auto;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.choix-reponses {
+    width: 75%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choix {
+    width: 100%;
+}
+
+.choix:hover {
+    background-color: #8b1e2d;
+    color: white;
+}
+
+.reponse-explication {
+    display: none;
+    margin-top: 25px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.reponse-explication.correct {
+    display: block;
+    color: #2e7d32;
+}
+
+.reponse-explication.faux {
+    display: block;
+    color: #b3261e;
+}
+
+.symbole-reponse {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.reponse-choisie {
+    font-weight: 700;
+}
+
+.choix-reponses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.choix {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    border: 1px solid #8b1e2d;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.choix input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.bouton-repondre {
+    margin-top: 25px;
+    padding: 12px 30px;
+
+    background-color: #8b1e2d;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.bouton-repondre:hover {
+    background-color: #1d5c63;
+}
+
+.reponse-explication {
+    display: block;
+    margin-top: 25px;
+}
+
+.resultat-correct {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.resultat-faux {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.resultat-correct p,
+.resultat-faux p {
+    margin: 5px 0 0;
+    line-height: 1.6;
+}
+
+.aucune-reponse {
+    color: #222222;
+}
+
+.boutons-quiz {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.bouton-repondre {
+    margin-top: 0;
+}
+
+.bouton-reset {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #8b1e2d;
+    border-radius: 50%;
+
+    background-color: transparent;
+    color: #8b1e2d;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.bouton-reset:hover {
+    background-color: #8b1e2d;
+    color: white;
+    transform: rotate(-30deg);
+}
+
+.image-question {
+    display: block;
+    width: 70%;
+    max-width: 340px;
+    height: auto;
+
+    margin: 20px auto 30px auto;
+
+    border-radius: 6px;
+}
+
+/* VIDEO */
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 35px auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Dictionnaire */
+.illustration-lexique {
+    width: 250px !important;
+    height: 200px !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
